@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="song.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="index.html">
+                <img width="30%" src="https://tse4.mm.bing.net/th?id=OIP.nZH7xljiPx4afNrlulyPMQHaHa&pid=Api&P=0"
+                    alt=""></a>
+        </div>
+        <div class="right">
+            <a href="pop.html">POP</a>
+            <a class="active" href="rock.html">ROCK</a>
+            <a href="anime.html">ANIME</a>
+            <a href="EDM.html">EDM</a>
+            <a href="free.html">TRY FREE</a>
+            <a href="now.html"> BUY NOW</a>
+        </div>
+    </nav>
+    <main>
+        <div class="songs">
+            <div class="song">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.MyN5yAeVeO6dlYjlUyDaKgHaHa&pid=Api&P=0">
+                <h3>Shots</h3>
+                <button>Play</button>
+            </div>
+
+            <div class="song">
+                <img
+                    src="images/lifehouse.jpg">
+                <h3>Hurricane</h3>
+                <button>Play</button>
+            </div>
+
+            <div class="song">
+                <img
+                    src="images/centuries.jpg">
+                <h3>Centuries</h3>
+                <button>Play</button>
+            </div>
+
+            <div class="song">
+                <img
+                    src="images/shutupanddance.jpg">
+                <h3>Shut Up And Dance</h3>
+                <button>Play</button>
+            </div>
+
+            <div class="song">
+                <img
+                    src="images/song.jpg">
+                <h3>Phoenix</h3>
+                <button onclick = "playsong()">Play</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script> 
+    let song = new Audio ("songs/phienox.webm") 
+    function playsong () {
+        song.play()
+    }
+    </script>
+
+</body>
+
+</html>
